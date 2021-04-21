@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <img  src="img/c1.jpg"id="image" width="300" height="200" alt="">
+        <button onclick="myImage()">click here</button>
+        <script>
+            var images = ["img/c1.jpg","img/c2.jpg", "img/c3.jpg", "img/c4.jpg", "img/c5.jpg", "img/c6.jpg"]
+            function myImage() {
+                var x = Math.floor((Math.random()*6)+1);
+                console.log(x)
+                document.getElementById("image").src = images[x-1];
+                }
+        </script>
+    </body>
+</html>
